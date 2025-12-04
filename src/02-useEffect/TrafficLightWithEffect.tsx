@@ -8,7 +8,7 @@ const colors = {
 
 type TrafficLightColor = keyof typeof colors;
 
-export const TrafficLighWithEffect = () => {
+export const TrafficLightWithEffect = () => {
     const [light, setLight] = useState<TrafficLightColor>('red');
     const [countdown, setCountdown] = useState(5);
 

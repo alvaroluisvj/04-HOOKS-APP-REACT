@@ -5,6 +5,15 @@
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
+## Validacion para evitar manipulacion del localStore por los clientes
+# Paginas de los librerias para usar
+* https://zod.dev/
+
+- video de tutorial del curso de fernando herrera
+-https://www.udemy.com/course/react-cero-experto/learn/lecture/51977663#questions
+
+
+
 Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh

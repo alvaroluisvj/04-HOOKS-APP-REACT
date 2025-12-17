@@ -1,4 +1,4 @@
-import { useReducer, useState } from 'react';
+import { useEffect, useReducer, useState } from 'react';
 
 import { Plus, Trash2, Check } from 'lucide-react';
 
@@ -13,7 +13,12 @@ export const TasksApp = () => {
     // const [todos, setTodos] = useState<Todo[]>([]);
     const [state, dispatch] = useReducer(taskReducer, getTasksInitialState());
 
+    // Manejo del localStore, que cada vez que el state cambien lo va a guardar
+    useEffect(() => {
+        localStorage.setItem('tasks-state', JSON.stringify(state));
+    }, [state])
 
+    //  }, []) aqui se pone el objeto, en este caso es el state que se va almacenar cada vez que cambie.
 
     // Metodo para agregar una tarea
     const addTodo = () => {

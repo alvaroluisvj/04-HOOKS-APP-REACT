@@ -31,6 +31,7 @@ const GAME_WORDS = [
     'WEBPACK',
     'VITE',
     'TAILWIND',
+    'MATTHEW'
 ];
 
 // Esta función mezcla el arreglo para que siempre sea aleatorio
